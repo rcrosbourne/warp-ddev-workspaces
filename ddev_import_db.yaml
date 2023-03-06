@@ -1,0 +1,14 @@
+---
+name: Set import db
+command: ddev import-db --target-db={{target-db}} --src={{path}}
+arguments:
+  - name: target-db
+    description: The name of the target-db (default db)
+    default_value: db
+  - name: path
+    description: Full path to SQL dump
+    default_value: db.sql
+tags:
+  - ddev
+description: Imports data from a sql dump file. 
+shells: []

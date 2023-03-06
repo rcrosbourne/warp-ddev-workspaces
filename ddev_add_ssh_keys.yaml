@@ -1,0 +1,11 @@
+---
+name: Import local ssh keys 
+command: ddev auth ssh -d {{path}}
+arguments:
+  - name: path
+    description: Directory containing your ssh keys 
+    default_value: ~/.ssh
+tags:
+  - ddev
+description: Import local ssh keys
+shells: []

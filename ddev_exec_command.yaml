@@ -1,0 +1,11 @@
+---
+name: Execute command in web container 
+command: ddev exec -s web -d /var/www/html {{command}}
+arguments:
+  - name: command
+    description: Command to execute
+    default_value: npm run dev
+tags:
+  - ddev
+description: Execute command in a web container
+shells: []
